@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bizimle İletişime Geçin</title>
+
+    <style class="pozisyon">
+        .ortala {
+            position: absolute;
+            top: 85%;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+
+        }
+
+        .button1:hover {
+            background-color: rgb(110, 108, 87);
+            color: white;
+        }
+
+        .button1 {
+            background-color: rgb(255, 203, 70);
+            color: black;
+            border: none;
+            width: 173px;
+            height: 62px;
+            font-size: medium;
+     
+        width: auto;
+        padding: 8px 16px;
+    
+
+
+        }
+
+        .borders {
+            border-bottom: solid;
+            border-color: aliceblue;
+            border-width: 0.2px;
+            justify-content: center;
+            flex-wrap: wrap;
+            opacity: 0.5;
+        }
+
+        .bordersK {
+            border-bottom: solid;
+            border-color: aliceblue;
+            border-width: 0.2px;
+            justify-content: center;
+            flex-wrap: wrap;
+            opacity: 0.7;
+        }
+
+        .backcolor {
+            background-color: darkslategrey;
+        }
+
+
+        .iletisim {
+            position: absolute;
+            width: 800px;
+            height: 500px;
+            top: 50%;
+            right: 50%;
+            left: 30%;
+            background-color: white;
+            border-radius: 10px 10px 10px 10px;
+        }
+        .bilgiler {
+            width: 300px;
+            height: 400px;
+            position: absolute;
+            top: 10%;
+            left: -50px;
+            right: 50px;
+            background-color: rgb(255, 203, 70);
+            border-radius: 10px 10px 10px 10px;
+        }
+        .mesaj {
+            position: absolute;
+            top: 20%;
+
+            right: 50px;
+            left: 400px;
+        }
+        .bilgiPosition {
+            position: absolute;
+            top: 20%;
+            right: 20%;
+            left: 20%;
+        }
+        .bharita {
+            height: 800px;
+            width: 100%;
+        }
+
+
+
+        .altMenu {
+            height: 100%;
+            position: absolute;
+
+            right: 50%;
+            left: 50%;
+
+        }
+
+
+
+        th {
+            height: 80px;
+        }
+
+        .tableBorders {
+
+            width: 34%;
+
+        }
+
+        .tableMenu {
+            width: 14%;
+        }
+
+        .borderDikey {
+            border-right: solid;
+            border-width: 0.2px;
+            opacity: 0.3;
+
+        }
+
+        input[type=text] {
+            border: none;
+            border-bottom: 1px solid black;
+        }
+
+
+
+        .tab {
+
+            width: auto;
+            /*   */
+            background-color: rgb(255, 203, 70);
+        }
+
+
+
+        .alMenu2 {
+            padding: 8px 16px;
+        } 
+
+        .fontK {
+            font-size: small;
+        }
+
+        .fontS {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .call-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .call-icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px; 
+        margin-left: 75px;
+    }
+
+    .call-text {
+        margin-left:0;    }
+
+        .menu2Position{
+    position:absolute; right: 20%; left: 20%; top: 120%; color: rgb(217, 226, 235); 
+    }
+
+
+
+    .menu2Baslik{
+      position:absolute; right: 30%; left: 40%; top:-30%;
+    }
+
+    .altmenu2Position{
+        display: flex;
+
+            justify-content: center;
+            align-items: center;
+      
+        
+    }
+ 
+      /* 480 pikselden küçük ekranlar (telefonlar) için */
+
+
+/* 768 pikselden küçük ekranlar (tabletler) için */
+
+/* 992 pikselden küçük ekranlar (dizüstü bilgisayarlar) için */
+
+@media screen and (max-width: 992px) {
+    .altmenu2Position{
+      text-align: center;
+     
+    }
+    .menu2Baslik{
+        position:absolute;
+        left: 35%;
+        right: 10%;
+        top:-45%;
+    }
+    .tab {
+
+        width: 875px;
+        font-size: large;
+    }
+
+    .button1 {
+        width: auto;
+        padding: 8px 16px;
+    }
+    .iletisim{
+        position: absolute;
+
+width: 600px;
+height: 320px;
+right: 10%;
+ left:15%;
+ top: 30%;
+
+    }
+    .bharita{
+        width:860px;
+        height: 550px;
+    }
+    .bilgiPosition{
+        position: absolute;
+
+width: 300px;
+height: 300px;
+right: 10%;
+ left:15%;
+    }
+    
+    .bilgiler{
+
+        position: absolute;
+
+width: 350px;
+height: 250px;
+right: 30%;
+ left:-10%;
+
+    }
+
+    .mesaj{
+position:absolute;
+left: 60%;
+top: 8%;
+
+    }
+    .menu2Position{
+    position:absolute; 
+    right: 20%; 
+    left:8%;
+     top: 70%;
+    }}
+
+
+
+@media screen and (min-width:1024px  ) {
+
+
+
+
+}
+
+
+
+    </style>
+</head>
+
+<body style="background-color: dimgrey;">
+
+    <div >
+        <div class="tab fontS">
+            <button class="button1" onclick="">Home</button>
+            <button class="button1" onclick="">About Us</button>
+            <button class="button1" onclick="">Explore</button>
+            <button class="button1" onclick="">Blog</button>
+            <button class="button1" onclick="">Contact Us</button>
+            <button class="button1" onclick="">Our Agents</button>
+            <button class="button1" onclick="">Testimonial</button>
+
+
+        </div>
+
+
+        <img class="bharita" src="harita.png" alt="aa">
+        <div class="iletisim">
+            <div class="bilgiler">
+                <div class="bilgiPosition">
+                    <h1>Contact Us</h1>
+                    <p>
+                        Deneme Teknoloji Deneme Mah.
+                         Deneme Cad. İş Merkezi No: 10/1020 01120 Seyhan, Adana
+                        Türkiye
+                        <br>
+                    </p>
+                    info@deneme.com
+                </div>
+            </div>
+            <div class="mesaj">
+                <h1>Send A Message</h1>
+                <form action="">
+                    <label for="name">Name</label><br>
+                    <input type="text" name="name" id="name"> <br><br>
+                    <label for="lastName">Lastname</label><br>
+                    <input type="text" name="lastName" id="lastName"><br><br>
+                    <label for="message">Message</label><br>
+                    <input type="text" id="message" name="message" rows="4" cols="5"><br><br>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+
+
+
+
+        </div>
+
+
+
+        <div class="fontS menu2Position" >
+          
+            <div class="menu2Baslik">
+
+                <h1>RESTATE</h1>
+
+                <p class="fontK ">
+                    We are hair and beauty salon
+                </p>
+
+            </div>
+
+            <div class="bordersK "></div>
+
+
+            <div class="altmenu2Position">
+
+                <table>
+                    <tr>
+                        <th class="alMenu2">Home</th>
+                        <th class="alMenu2">Explore</th>
+                        <th class="alMenu2">Blog</th>
+                        <th class="alMenu2">Contact Us</th>
+                        <th class="alMenu2"" >Our Agents</th>
+                        <th class=" alMenu2">Testimonials</th>
+                        <th class="alMenu2">About Us</th>
+
+                    </tr>
+                </table>
+
+            </div>
+            <div class="borders"></div>
+
+
+            <div>
+                <table>
+                    <tr>
+                        <th class="tableBorders" >
+                            <p> Write Us</p> <br>
+                            <p >
+                                info@deneme.com                       
+                            </p>
+                        </th>
+                        <th class="borderDikey">
+                        </th>
+                        <th class="tableBorders">
+                            <div class="call-container">
+                                <img class="call-icon" src="location.png" alt="l">
+                                <p class="call-text">Villa 198, Street 26,
+                                    Khalafi City A, Abu Dhabu, UAE</p>
+                            </div>                 
+                            <div class="borderDikey" ></div>
+                        </th>
+                        <th class="borderDikey">
+                        </th>
+                        <th class="tableBorders">
+                            <div class="call-container">
+                                <img class="call-icon" src="phone.png" alt="l">
+                                <p class="call-text" >Call Us</p> <br>                                                       
+                            </div>
+                            <p class="call-text">
+                                +0123456789
+                            </p>
+                        </th>
+                    </tr>
+                </table>
+
+             </div>
+              <div class="borders"></div>
+         
+         </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
